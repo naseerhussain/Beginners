@@ -1,0 +1,80 @@
+CTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Instruction For Space Fortress</title>
+
+    <!-- styles -->
+    <link href="js/intro/example/css/bootstrap.min.css" rel="stylesheet">
+    <link href="js/intro/example/css/demo.css" rel="stylesheet">
+
+    <!-- Add IntroJs style -->
+    <link href="js/intro/introjs.css" rel="stylesheet">
+    <link href="js/intro/example/css/bootstrap-responsive.min.css" rel="stylesheet">
+
+  </head>
+  <style>body { font-family: Ubuntu, comic sans ms; }
+         h4 {margin-left:50px; text-align:left;font-family:ubantu,arial black  ;} 
+         h1 {text-align:center; font-family:ubantu,arial black;}      
+  </style>
+  <body>
+
+    <div class="container-narrow">
+
+        <h1 class="title" >Instruction For Space Fortress</h1>
+        <a class="btn btn-large btn-success" href="javascript:void(0);" onclick="javascript:introJs().start();">Tell me how</a>
+			<br><br>
+		<div id='ship' data-step="1" data-intro="" >
+			<h4>Overview</h4>
+					<p style="background-color:orange; text-align:fit screen;margin-left:100px;margin-right:50px"> Space Fortress requires players to manage multiple demanding and overlapping component tasks and simulates the complexity of many important real-world tasks.<br> The main goal of the game is for players to destroy the space Fortress (at the center of the screen) as many times as possible while avoiding damage to their own Ship.</p>
+		</div>
+		<div id='ship' data-step="2" data-intro="">
+			<h4 >Ship</h4>
+			<p style="background-color:yellow; text-align:fit screen;margin-left:100px;margin-right:50px"> Players must navigate their ship with precise control using arrow keys(<b> right arrow key to turn right and left arrow key to turn left and top arrow for applying thrust</b>) in a fictionless environment. The ship has no braking system; to slow or stop the ship players must rotate it so it faces the opposite direction of its current motion and apply a thrust.<br>To destroy the fortress, players must hit it with missiles by aiming their ship towards it and pressing the <b>spacebar</b> button.</p>
+		</div>
+			<br><br>
+		<div id='fortress' data-step="3" data-intro="">
+			<h4 >Fortress</h4>
+			<p style="background-color:orange; text-align:fit screen;margin-left:100px;margin-right:50px"> In this game, your principal opponent is the Space Fortress which is stationed in the center of the screen.
+The Fortress can rotate, track, and lock onto your ship, firing a shell at your ship.  When a shell hits or passes close enough to your ship, it will damage or destroy it.Your mission is to destroy the Fortress.  In order to do this, you have to hit the Fortress with your missiles at least 10 times.  The timing of these first 10 shots is critical.  At least 250 milliseconds must occur between each shot.  The number of successful Fortress hits is displayed in the “Vulnerability Counter” (VLNER) on the instrument panel.If you shoot at the Space Fortress too rapidly, the vulnerability of the Fortress will reset to zero and you must begin accumulating vulnerability points all over again. Once the vulnerability of Fortress reaches 10 (or more) you can destroy it by hitting it with a double shot. </p>
+		</div>
+		<div id='mines' data-step="4" data-intro="">
+			<h4 >Mines</h4>
+			<p style="background-color:yellow; text-align:fit screen;margin-left:100px;margin-right:50px"> Mines constitute an additional threat to your ship.  Every 4 seconds, a mine will appear somewhere on the screen.Mines will actively pursue your ship and try to damage or destroy it if they get close enough.If you do not destroy the mine, it will remain active for 10 seconds before it disappears.  You will want to deal with mines as quickly as you can, because as long as there is a mine on the screen, you cannot damage the Space Fortress.  There are two types of mines, and you must respond differently depending on which type it is.A mine can be either a “friend” or a “foe”.Its type is identified by a letter that appears in the middle of the instrument panel under the label IFF (Identify Friend or Foe).If the mine is foe the you need press 'd' letter button twice before firing missile at mine. Before each 3-minute game, three letters will be displayed on the screen that designate the identity of “foe” mines.  These identifiers will change from one game to the next.  It is very important that you remember these letters.  When you detect a mine on the display, check your instrument panel.  If the letter is one of the three letters presented at the beginning of the game, the mine on the display is a “foe”.  IF the letter is not one of the three presented at the beginning, then it is a “friend”.
+	When you fire a missile at a “friendly” mine, you will “energize” it.  Each time you energize a “friendly” mine you will receive 20 points and the vulnerability counter for the Space Fortress will increment by one point. Energizing friendly mines increases the vulnerability of the Space Fortress.<br>
+	<b>IMPORTANT!</b>  When a mine appears on the screen, your weapon is not effective against the Fortress.  However, once the mine disappears (or you have destroyed it), your weapons system automatically becomes effective against the Fortress again. </p>
+		</div>
+			<br><br>
+			<div id='ship_control' data-step="5" data-intro="">
+			<h4 >Ship Control</h4>
+			<p style="background-color:orange; text-align:fit screen;margin-left:100px;margin-right:50px"><font face="Comics;">
+	You must learn to acquire control of the ship and fly it in a planned trajectory.  Your goal is to fly the ship in a clockwise direction around the Fortress while staying within the hexagon boundaries.  By doing this, you will maximize your ship control points.  You must also not leave the edges of the game play area.  When this happens, you wrap around to the other side of the screen.  This is called entering “hyperspace”, and you lose points whenever you enter hyperspace.Subscore will be added for moving at low velocity and substracted for moving at high velocity .</font>
+</p>
+			</div>
+			<br><br>
+			<div id='speed_mine_handling' data-step="6" data-intro="">
+			    <h4 >Speed Of Mine Handling</h4>
+			    <p style="background-color:yellow; text-align:fit screen;margin-left:100px;margin-right:50px">You will receive immediate feedback about your response time and success in handling each mine by the number of points added or lost to the SPEED score.  Points will be subtracted from this score if you are slow to respond to a mine, or do not respond at all.  You will always maximize your points in this area by handling mines quickly and appropriately.
+			    </p>
+			</div>
+			<br><br>
+			<div id='Bonus' data-step="6" data-intro="">
+			    <h4 >Bonus</h4>
+			    <p style="background-color:orange; text-align:fit screen;margin-left:100px;margin-right:50px">Whenever $ symbol appears underneath the fortress in a row then press 'a' or 's' button  to get 100 points or 50 bullets bonus respectively. If u press these buttons before second time symbol appears then you miss next pair also. 
+			    </p>
+			</div>
+			<!--<div id='speed_mine_handling' data-step="5" data-intro="">
+			    <h4>Speed Of Mine Handling</h4>
+			    <p>
+The main goal of the game is for players to destroy the Space Fortress (at the center of the screen) as many times as possible whileavoiding damage to their own ship. Players must navigate their ship with precise control using a arrow keys( <b>right arrow key for turning right, left arrow key for turning left and top arrow key for moving forward</b>) in a frictionless environment. The ship has no braking system; to slow or stop the ship players must rotate it so it faces the opposite direction of its current motion and apply a thrust. This makes control of the ship a challenging and demanding task. To destroy the fortress, players must hit it with missiles by aiming their ship towards it and pushing the fire button(<b>spacebar button</b>). The fortress becomes vulnerable to destruction after it is hit by ten missiles with the timing between each hit at least 250 ms. It can then be destroyed with a rapid double shot (two missile hits with the time between shots being less than 250 ms). The vulnerability of the fortress is reset to zero if it is hit with a double shot before it is vulnerable to destruction. The fortress rotates and shoots back at the player's ship, so the player's ship must be in constant motion. Each time the player's ship is hit three times it is destroyed. At regular intervals, mines appear on the screen. Mines pursue the ship and try to damage it. Importantly, the fortress cannot be attacked as long as a mine is on the screen, thus mines must be dealt with immediately. The mine handling component of the game is based on the memory task developed by Sternberg (1966). Each mine has a letter associated with it that is displayed in the instrument panel(IFF) at the bottom of the screen. This letter identifies it as friendly or not. At the beginning of each game participants are asked to memorize three letters that represent foe mines; all other mines are friends. Depending on whether the mine is a friend or a foe, the player must engage in different sequence of actions, and mine identification mistakes are costly. Finally, there is a constant resource monitoring task embedded in the Space Fortress game. Below the fortress, a stream of symbols appears. Whenever a dollar sign symbol appears, players can <b>press 'a' letter button to select bonus points or press 's' letter button to select bonus missiles (which are a limited resource)</b>. Participants are encouraged to monitor this information and obtain available bonuses. Points are awarded to participants based on their game performance, and different actions add to, or subtract from, different subscores displayed in the instrument panel at the bottom.
+			    </p>
+			</div>-->
+
+        <a class="btn btn-large btn-success" href="/spacefortress" style="margin-left: 35%">I Got It</a>
+    </div>
+
+    <script type="text/javascript" src="js/intro/intro.js"></script>
+  </body>
+</html>
+
+
