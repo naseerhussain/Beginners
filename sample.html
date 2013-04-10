@@ -1,10 +1,22 @@
-
-
-
-
-
-
-
-<html
-
-
+<html>
+<body>  
+<form>
+</br>Enter name:<input type="text" name="name">
+</br>Enter age:<input type="text" name="age">
+</br>Enter sub1 marks:<input type="text" id="sub1">
+</br>Enter sub2 marks:<input type="text" id="sub2"> 
+</br></br><input type="button" value="click ME" onclick=add()>
+<input type="label" id="result">
+<script>
+function add()
+{
+   var x,y,z;
+   x=parseInt(document.getElementById("sub1").value);
+   y=parseInt(document.getElementById("sub2").value);
+   z=x+y; 
+   document.getElementById("result").value=z;
+}
+</script>
+</form>
+</html>
+</html>
