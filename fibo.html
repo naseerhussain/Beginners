@@ -8,15 +8,16 @@ function fibo()
   alert("hi");
   a[0]=1;
   a[1]=2;
-   document.getElementById("abc").innerHTML=a[0] + "-->" + a[1];
+   document.write("</br>"+"</br>"+a[0]+"</br>"+ a[1]);
   for(i=2;i<100;i++)
   {
       a[i]=a[i-1]+a[i-2]; 
        sum+=a[i];
-      document.getElementById("abc").innerHTML="-->"+ a[i];
-      document.getElementById("abc").value=" ";
+      document.write("</br>"+a[i]);
+//      document.getElementById("abc").value=" ";
       if(sum>200)
       {
+         a[i]-=a[i-1];
         alert("fibo value exceeding 200");
         break;
       }
