@@ -1,0 +1,40 @@
+<html>
+<body>
+<button onclick="palin11();">click me!!!</button>
+<script>
+function palin11()
+{
+ var str=prompt("Enter the string");
+ var a=str[0];
+ var pa=new Array();
+ var x=str.length-1;
+alert(x);
+ while(x){
+  if(a==str[x]){
+     var c=x;
+      break;}
+  else
+  { 
+   --x;
+    if(x==0){
+     alert("no palindrome found");
+       break;}
+  }
+}
+   for(i=c,k=0;i>=0;i--){
+   if(str[i]==str[k])
+    k++;
+   else{
+       alert("not palindrome");break;
+    }
+    }
+     for(q=0;q<=c;q++)
+     pa[q]=str[q];
+    alert("palindrome is: "+ pa);
+   
+   }
+   
+</script>
+</body>
+</html>
+
