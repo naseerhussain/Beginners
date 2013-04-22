@@ -1,0 +1,81 @@
+<html>
+<body>
+<button onclick="palin11()">Click it dude!!!</button>
+<script>
+function palin11()
+{
+     var str=prompt("Enter the string");
+     var pa=new Array();
+     pa=str;
+     var x=str.length-1;
+     var a=0;
+     console.log(a);
+     see(pa,str,a,x);
+    //palindromes are:
+}
+function see(pa,str,a,x)
+{
+    var s,n;
+    s=a;
+	n = pa.length-1;
+    for(i=s,j=x;i<j;j--) 
+    {
+        if(pa[i]==str[j])
+	{
+            comp(pa,str,i,j);
+            // new_comparison ( str[i,j] ); get array slice
+	}
+        else if(pa[i] != str[j]) 
+	{
+      	    see(pa,str,i,--j)
+            if(i==j)  { 
+
+                see(pa,str,++s,n);
+	    }
+        }
+        else
+           alert("not a palindrome");
+    }
+}
+
+function new_comparison ( ispalindrome ) {
+     if ( ispalindrome == ispalindrome.reverse() ) {
+           return true;      
+     }
+     return false;
+}
+
+function comp(pa,str,i,j)   
+{
+    var ca=new Array();
+    for(a=i,b=j;a<=b;a++)
+    {
+        if(pa[a]==str[b])
+        {
+            --b;
+        }
+        else {
+           alert("not a palindrome");
+           return false;
+        }
+   }
+  for(a=i,b=j;a<=b;a++)
+   ca[a]=str[a];
+  document.write("</br>"+ca);
+  //alert("palindrome is: "+ ca);
+   return true;
+}
+
+/*function inc(pa,str,i,j)
+{
+ for(a=i,b=j;a<b;j--)
+   if(pa[i]!=str[j]){
+       if(pa[i]==str[j])
+       comp(pa,str,i,j);
+ }
+}
+  */  
+</script>
+</body>
+</html>
+
